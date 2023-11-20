@@ -8,7 +8,7 @@ const BookCarousel = ({ books }) => {
     const gapBetweenImages = 10;
   
     // Duplica los libros en cada grupo para asegurar la continuidad de la animación.
-    const duplicatedBooks = books.map(group => [...group, ...group]);
+    const duplicatedBooks = books.map(group => [...group, ...group, ...group]);
   
     // Actualiza la altura total del contenedor en función del nuevo tamaño de las imágenes.
     const totalHeight = (duplicatedBooks[0].length * (heightOfSingleImage + gapBetweenImages)) - gapBetweenImages;

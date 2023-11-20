@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
 import RegisterPage from './components/RegisterPage'; 
+import LoginPage from './components/LoginPage';
 
 // Importa las imágenes de las portadas de los libros
 import cover1 from './assets/book_covers/cover1.jpg';
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage books={bookCovers} />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
     </Router>

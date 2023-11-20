@@ -35,6 +35,7 @@ const Header = () => {
             ...buttonStyle,
             color: hoverInicio ? '#007bff' : 'black'
           }}
+          onClick={() => navigate('/login')} // Cambiado a /login
         >
           Inicio
         </button>
